@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>魅族商城</title>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script type="text/javascript" src="jquery-3.1.0.min.js">
+			
+		</script>
+		<script>
+			window.onload = function() {
+				var oTop = document.getElementById("to_top");
+				var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+				var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+				oTop.style.left = screenw - oTop.offsetWidth + "px";
+				oTop.style.top = screenh - oTop.offsetHeight + "px";
+				oTop.onclick = function() {
+					document.documentElement.scrollTop = document.body.scrollTop = 0;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="body1" id="body1">
+			<div class="div1">
+				<img src="images/Cix_s1fP6LmAbk7EAAPkgm7caeU808.png" />
+				<div class="div2">
+					<img src="images/close.png" id="close">
+				</div>
+			</div>
+		</div>
+		<div class="body2">
+			<div class="div3">
+				<ul class="ul1">
+					<li style="margin-left:0px;">
+						<a href="http://hd.meizu.com/fans/index.html" target="_blank">魅族官网</a>
+					</li>
+					<li>
+						<a href="http://store.meizu.com/index.html" target="_blank">魅族商城</a>
+					</li>
+					<li>
+						<a href="http://www.flyme.cn/" target="_blank">Flyme</a>
+					</li>
+					<li>
+						<a href="http://retail.meizu.com/index.html" target="_blank">专卖店</a>
+					</li>
+					<li>
+						<a href="http://care.meizu.com/index.html" target="_blank">服务</a>
+					</li>
+					<li>
+						<a href="http://bbs.meizu.cn/" target="_blank">社区</a>
+					</li>
+				</ul>
+				<ul class="ul2">
+					<li>
+						<a href="https://login.flyme.cn/vCodeLogin?useruri=http%3A%2F%2Fstore.meizu.com%2Fmember%2Flogin.htm?useruri=http://me.meizu.com/member/favorite/index&sid=unionlogin&service=&autodirct=true" target="_blank">
+							我的收藏
+							<div class="topbar-new">new</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://login.flyme.cn/vCodeLogin?useruri=http%3A%2F%2Fstore.meizu.com%2Fmember%2Flogin.htm?useruri=http://me.meizu.com/member/favorite/index&sid=unionlogin&service=&autodirct=true" target="_blank">我的订单</a>
+					</li>
+					<li>
+						<a href="https://login.flyme.cn/vCodeLogin?useruri=http%3A%2F%2Fstore.meizu.com%2Fmember%2Flogin.htm?useruri=http://me.meizu.com/member/favorite/index&sid=unionlogin&service=&autodirct=true" target="_blank">登录</a>
+					</li>
+					<li style="margin-right:35px;">
+						<a href="https://i.flyme.cn/register" target="_blank">注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="body3">
+			<a href="http://www.meizu.com/" target="_blank">
+				<div class="div4"></div>
+			</a>
+			<div class="div7">
+				<div id="pro11">
+					<a href="#">PRO手机</a>
+				</div>
+				<div id="pro12">
+					<a href="#"> 魅蓝手机 </a>
+				</div>
+				<div id="pro13">
+					<a href="#"> MX手机 </a>
+				</div>
+				<div id="pro14">
+					<a href="#"> 精选配件 </a>
+				</div>
+				<div id="pro15">
+					<a href="#"> 智能硬件 </a>
+				</div>
+			</div>
+
+			<div class="div5" id="pro1" onmouseover="fun1()" onmouseout="fun11()" style="height: 10px;">
+				<a href="http://detail.meizu.com/item/meizu_pro6.html?rc=sd" target="_blank">
+					<div class="div6" style="margin-left:240px;">
+						<img src="images/CnQOjVeE2E-AAGZCABHUf4HwKyw117_126x126.png" />
+						<p style="font-size:12px;">魅族PRO6</p>
+						<p style="color:#E74E41;">￥2499</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/meizu_pro5.html?rc=sd" target="_blank">
+					<div class="div6">
+						<img src="images/1450928403@126x126.png" />
+						<p style="font-size:12px;">魅族PRO5</p>
+						<p style="color:#E74E41;">￥2199</p>
+					</div>
+				</a>
+			</div>
+			<div class="div5" id="pro2" onmouseover="fun2()" onmouseout="fun12()">
+				<a href="http://detail.meizu.com/item/meilan_max.html?rc=sd" target="_blank">
+					<div class="div6" style="margin-left:240px;">
+						<img src="images/CnQOjVfNJuCAXDxmAAscQInnNPY806_126x126.png" />
+						<p style="font-size:12px;">魅蓝MAX</p>
+						<p style="color:#E74E41;">￥1699</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/meilanU20.html?rc=sd" target="_blank">
+					<div class="div6">
+						<img src="images/Cix_s1fDkdyAb0YGAEeDe0CxIV8257_126x126.png" />
+						<p style="font-size:12px;">魅蓝U20</p>
+						<p style="color:#E74E41;">￥1099</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/meilan_e1.html?rc=sd" target="_blank">
+					<div class="div6">
+						<img src="images/CnQOjVeq0uGASgUFAAzQ2opb7qI013_126x126.png" />
+						<p style="font-size:12px;">魅族PRO5</p>
+						<p style="color:#E74E41;">￥2199</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/meilan3s.html?rc=sd" target="_blank">
+					<div class="div6">
+						<img src="images/Cix_s1epgR6AD8KbAA2l_exLROk404_126x126.png" />
+						<p style="font-size:12px;">魅族PRO5</p>
+						<p style="color:#E74E41;">￥2199</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/meilan3.html?rc=sd" target="_blank">
+					<div class="div6">
+						<img src="images/1461569198@126x126.png" />
+						<p style="font-size:12px;">魅族PRO5</p>
+						<p style="color:#E74E41;">￥2199</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/meilan_note3.html?rc=sd" target="_blank">
+					<div class="div6">
+						<img src="images/1459927797@126x126.png" />
+						<p style="font-size:12px;">魅族PRO5</p>
+						<p style="color:#E74E41;">￥2199</p>
+					</div>
+				</a>
+			</div>
+			<div class="div5" id="pro3" onmouseover="fun3()" onmouseout="fun13()">
+				<a href="http://detail.meizu.com/item/mx6.html?rc=sd" target="_blank">
+					<div class="div6" style="margin-left:240px;">
+						<img src="images/Cix_s1eN3IiASxVXAA9IpQ8-shg169_126x126.png" />
+						<p style="font-size:12px;">魅族PRO6</p>
+						<p style="color:#E74E41;">￥2499</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/meizu_mx5.html?rc=sd" target="_blank">
+					<div class="div6">
+						<img src="images/CnQOjVfD9pWAS6VZAAutvljEfx8425_126x126.png" />
+						<p style="font-size:12px;">魅族PRO5</p>
+						<p style="color:#E74E41;">￥2199</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/meizu_mx5e.html?rc=sd" target="_blank">
+					<div class="div6">
+						<img src="images/Cix_s1fNIqaAPDEJAAutvljEfx8334_126x126.png" />
+						<p style="font-size:12px;">魅族PRO5</p>
+						<p style="color:#E74E41;">￥2199</p>
+					</div>
+				</a>
+			</div>
+			<div class="div5" id="pro4" onmouseover="fun4()" onmouseout="fun14()">
+				<a href="http://detail.meizu.com/item/meizu_ep51.html?skuid=1122" target="_blank">
+					<div class="div6" style="margin-left:240px;">
+						<img src="images/Cix_s1eFrxyAQWpEAAEcHQ8zBWo729_126x126.png" />
+						<p style="font-size:12px;">魅族 EP51蓝牙运动耳机</p>
+						<p style="color:#E74E41;">￥269</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/meizu_hd50.html?skuid=839" target="_blank">
+					<div class="div6">
+						<img src="images/CnQOjVeFsA2AMvwBAATZrGgT1ak941_126x126.png" />
+						<p style="font-size:12px;">魅族 HD50 头戴式耳机</p>
+						<p style="color:#E74E41;">￥399</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/mpower_m8e.html?skuid=1061" target="_blank">
+					<div class="div6" style="width:132px;">
+						<img src="images/Cix_s1eFsDmAYpT5AAKdyPUHRpQ307_126x126.png" />
+						<p style="font-size:12px;">魅族移动电源（标准版）</p>
+						<p style="color:#E74E41;">￥99</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/m10_dianyuan.html?skuid=314" target="_blank">
+					<div class="div6">
+						<img src="images/CnQOjVeFsEuAHvc3AASc1X7HVrg876_126x126.png" />
+						<p style="font-size:12px;">魅族移动电源 快充版</p>
+						<p style="color:#E74E41;">￥149</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/ep21hd.html?skuid=10" target="_blank">
+					<div class="div6">
+						<img src="images/Cix_s1eFsMmANFNOAAFvnUbd-p4052_126x126.png" />
+						<p style="font-size:12px;">魅族 EP-21HD耳机</p>
+						<p style="color:#E74E41;">￥129</p>
+					</div>
+				</a>
+				<ul class="ul3">
+					<li class="li1"><img src="images/1467696166-40112.png">
+						<a href="http://lists.meizu.com/page/list?categoryid=79&rc=sdsd" target="_blank">耳机 / 音箱</a>
+					</li>
+					<li class="li2"><img src="images/1467696197-95413.png">
+						<a href="http://lists.meizu.com/page/list?categoryid=80&rc=sd" target="_blank"> 路由器 / 移动电源</a>
+					</li>
+					<li class="li3"><img src="images/1467696220-57637.png">
+						<a href="http://lists.meizu.com/page/list?categoryid=81&rc=sd" target="_blank">保护套 / 后盖 / 贴膜</a>
+					</li>
+					<li class="li4"><img src="images/1467696242-24236.png">
+						<a href="http://lists.meizu.com/page/list?categoryid=82&rc=sd" target="_blank">数据线 / 电源适配器</a>
+					</li>
+					<li class="li5"><img src="images/1467705893-97644.png">
+						<a href="http://lists.meizu.com/page/list?categoryid=83&rc=sd" target="_blank">周边配件</a>
+					</li>
+				</ul>
+			</div>
+			<div class="div5" id="pro5" onmouseover="fun5()" onmouseout="fun15()">
+				<a href="http://detail.meizu.com/item/meizu_luyouqi.html?skuid=175" target="_blank">
+					<div class="div6" style="margin-left:240px;">
+						<img src="images/CnQOjVfQCbCAdFjzAAL9OUJBRPk818_126x126.png" />
+						<p style="font-size:12px;">魅族智能路由器</p>
+						<p style="color:#E74E41;">￥99 起</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/XunLei_TB01.html?skuid=1780" target="_blank">
+					<div class="div6">
+						<img src="images/CnQOjVfI2aKAQBNbAAI9fvIkJl0379_126x126.png" />
+						<p style="font-size:12px;">迅雷下载宝TB01</p>
+						<p style="color:#E74E41;">￥159</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/lexin_mambo_watch.html?skuid=1187" target="_blank">
+					<div class="div6" style="width:158px;">
+						<img src="images/Cix_s1fQCe2AXxXpAASuHeqwOlM114_126x126.png" />
+						<p style="font-size:12px;">乐心mambo watch 智能手表</p>
+						<p style="color:#E74E41;">￥399</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/lefan_jingdian.html?skuid=380" target="_blank">
+					<div class="div6">
+						<img src="images/CnQOjVfQChKAWExiAAJsXpneu0I421_126x126.png" />
+						<p style="font-size:12px;">乐范魔力贴（经典版）</p>
+						<p style="color:#E74E41;">￥299</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/WeLoop_now2.html?skuid=1685" target="_blank">
+					<div class="div6" style="width:153px;">
+						<img src="images/Cix_s1fQCjuAMXRmAANvcSRhIBg704_126x126.png" />
+						<p style="font-size:12px;">WeLoop唯乐now2智能手环</p>
+						<p style="color:#E74E41;">￥299</p>
+					</div>
+				</a>
+				<a href="http://detail.meizu.com/item/XYNGDS_N1pro.html?skuid=1475" target="_blank">
+					<div class="div6">
+						<img src="images/CnQOjVfQCmiAB3cCAAYRPbOLqLQ701_126x126.png" />
+						<p style="font-size:12px;">新游智能游戏手柄N1pro</p>
+						<p style="color:#E74E41;">￥119</p>
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="body4" id="body4" style="background: url(images/body1.jpg); background-position:center;background-size:cover;">
+
+			<div class="div8" >
+				<ul class="ul4">
+					<li class="li7">全部商品分类</li>
+					<li class="li7"  onmouseover="li1()" onmouseout="li11()">手机</li>
+					<li class="li7" onmouseover="li2()" onmouseout="li21()">智能硬件</li>
+					<li class="li7" onmouseover="li3()" onmouseout="li31()">耳机/音箱</li>
+					<li class="li7" onmouseover="li4()" onmouseout="li41()">路由器/移动电源</li>
+					<li class="li7" onmouseover="li5()" onmouseout="li51()">保护套/后盖/贴膜</li>
+					<li class="li7" onmouseover="li6()" onmouseout="li61()">数据线/电源适配器</li>
+					<li class="li7" onmouseover="li7()" onmouseout="li71()">周边配件</li>
+				</ul>
+				
+				<div style="margin-left:652px; width:110px; height:10px;margin-top: 460px;">
+					<div class="bx-wrapper" onmouseenter="wrapper1()" id="wrappe0"></div>
+					<div class="bx-wrapper" onmouseenter="wrapper2()" id="wrappe1"></div>
+					<div class="bx-wrapper" onmouseenter="wrapper3()" id="wrappe2"></div>
+					<div class="bx-wrapper" onmouseenter="wrapper4()" id="wrappe3"></div>
+					<div class="bx-wrapper" onmouseenter="wrapper5()" id="wrappe4"></div>
+				</div>
+				<div class="div10" onmouseenter="div10()" onmouseleave="div11()" id="div101" style="width:100px;">
+					<ul>
+					<li><img src="images/Cix_s1fM2_iASNMvAAscQInnNPY866.png" width="60" height="60"/ class="img1"><p>魅蓝MAX</p></li>
+					<li><img src="images/CnQOjVfDkiGAFU-BAEeDe0CxIV8968_180x180.png" width="60" height="60"/ class="img1"><p >魅蓝U20</p></li>
+					<li><img src="images/CnQOjVeq03-AG1suAAzQ2opb7qI306_180x180.png" width="60" height="60"/ class="img1"><p >魅蓝E</p></li>
+					<li><img src="images/CnQOjVeN3N2AP8SWAA9IpQ8-shg954_180x180.png" width="60" height="60"/ class="img1"><p >魅族MX6</p></li>
+					<li><img src="images/Cix_s1eyhSCARORGAA2l_exLROk267_180x180.png" width="60" height="60"/ class="img1"><p >魅蓝3S</p></li>
+					</ul>
+					<ul>
+					<li><img src="images/1461569261@180x180.png" width="60" height="60"/ class="img1"><p >魅蓝3</p></li>
+					<li><img src="images/1460456848@180x180.png" width="60" height="60"/ class="img1"><p >魅蓝note3</p></li>
+					<li><img src="images/Cix_s1fD9dqAL_O4AAbqolcyaco197_180x180.png" width="60" height="60"/ class="img1"><p >魅蓝metal</p></li>
+					<li><img src="images/1460456918@180x180.png" width="60" height="60"/ class="img1"><p >魅蓝PRO5</p></li>
+					<li><img src="images/Cix_s1fI2VWAF3QkAARxgZ2dBHg194_180x180.png" width="60" height="60"/ class="img1"><p >魅蓝E星际迷航版</p></li>
+					</ul>
+					<ul style="float:left;width: 300px;height:480px;position: absolute;top: 0px;left:300px;">
+					 <li><img src="images/CnQOjVfXW6yAIpmRAADLpL-unTc429.jpg"width="290"height="460" /></li>
+					</ul>		
+				</div>
+				<div class="div10" onmouseenter="div12()" onmouseleave="div13()" id="div102">
+					<ul>
+					<li><img src="images/Cix_s1eFshOAaV_JAAPz4Wq7lzg676_180x180.png" width="60" height="60"/ class="img1"><p> 沁麟2.5L智能靠谱煲</p></li>
+					<li><img src="images/CnQOjVeFsgmAR3p2AAEl_AGH-x4620_180x180.png" width="60" height="60"/ class="img1"><p > 乐范AirPet 空气净化器</p></li>
+					<li><img src="images/CnQOjVeFsgmAR3p2AAEl_AGH-x4620_180x180.png" width="60" height="60"/ class="img1"><p >WeLoop唯乐now2智能手环</p></li>
+					<li><img src="images/Cix_s1eFsjiADguwAASuHeqwOlM555_180x180.png" width="60" height="60"/ class="img1"><p > 乐心mambo watch手表</p></li>
+					<li><img src="images/Cix_s1eFskeABXpiAAKVoRzEvAo265_180x180.png" width="60" height="60"/ class="img1"><p > 乐行天下V5智能电动独轮车</p></li>
+					</ul>
+					<ul>
+					<li><img src="images/CnQOjVeFsleAWphAAAHb3BVBttE050_180x180.png" width="60" height="60"/ class="img1"><p > 公子小白情感智能机器人</p></li>
+					<li><img src="images/Cix_s1eFsnaAG2b3AAIRrbWmQSE096_180x180.png" width="60" height="60"/ class="img1"><p > 麦开智能水杯Cuptime2</p></li>
+					<li><img src="images/Cix_s1eN_jyAZ4lcAASOdyWx6i8375_180x180.png" width="60" height="60"/ class="img1"><p >控客立体拓展智能排插主体	</p></li>
+					<li><img src="images/Cix_s1fJTpiAdZ7VAAGowe9Q8b0266.png" width="60" height="60"/ class="img1"><p > 极路客G1智能行车记录仪</p></li>
+					<li><img src="images/Cix_s1epjWOAJypuAART0CLcdNw175_180x180.png" width="60" height="60"/ class="img1"><p >新游智能游戏手柄 新玩Q1</p></li>
+					</ul>
+					<ul style="float:left;width: 300px;height:480px;position: absolute;top: 0px;left:300px;">
+					 <li><img src="images/CnQOjVe6YM2ABxETAAD2yguxi7A477.jpg"width="290"height="460" /></li>
+					</ul>		
+				</div>
+				<div class="div10" onmouseenter="div14()" onmouseleave="div15()" id="div103">
+					<ul>
+					<li><img src="images/Cix_s1eFspmAIXWzAAHOwfpsRUs892_180x180.png" width="60" height="60"/ class="img1"><p> 魅族 EP51蓝牙运动耳机</p></li>
+					<li><img src="images/CnQOjVeFsqGAD3OVAAPYuKXCruA359_180x180.png" width="60" height="60"/ class="img1"><p > 魅族HD50 头戴式耳机</p></li>
+					<li><img src="images/Cix_s1eFsqmAK20iAAG11JKsOMI192_180x180.png" width="60" height="60"/ class="img1"><p > 魅族EP-31耳机</p></li>
+					<li><img src="images/CnQOjVeFsrKAcIrYAAN-FTgo9io848_180x180.png" width="60" height="60"/ class="img1"><p > 先锋 SE-CL51S</p></li>
+					<li><img src="images/Cix_s1eFsruAUeRXAALLD1alUHw460_180x180.png" width="60" height="60"/ class="img1"><p > beats Urbeats 入耳耳机</p></li>
+					</ul>
+					<ul>
+					<li><img src="images/CnQOjVeFstCAHf9lAAU6wJuHLos523_180x180.png" width="60" height="60"/ class="img1"><p >Skullcandy hesh头戴耳机</p></li>
+					<li><img src="images/Cix_s1eFstiAKsS7AALI3W25870695_180x180.png" width="60" height="60"/ class="img1"><p > 铁三角 ATH-CLR100</p></li>
+					<li><img src="images/Cix_s1eqjeGAZKQEAAYLx43w1n0102_180x180.png" width="60" height="60"/ class="img1"><p >Skullcandy smokin buds</p></li>
+					<li><img src="images/CnQOjVeF06mAK7nfAAMJ5sb7-M8169_180x180.png" width="60" height="60"/ class="img1"><p > FiiO飞傲M3无损音乐播放器</p></li>
+					<li><img src="images/CnQOjVeFsx2ASFAJAAfsM-JmlBA442_180x180.png" width="60" height="60"/ class="img1"><p > 先锋APS-BA202S蓝牙音箱</p></li>
+					</ul>
+					<ul style="float:left;width: 300px;height:480px;position: absolute;top: 0px;left:300px;">
+					 <li><img src="images/Cix_s1ey2EeAC83vAABioEQz5PE923.jpg"width="290"height="460" /></li>
+					</ul>		
+				</div>
+				<div class="div10" onmouseenter="div16()" onmouseleave="div17()" id="div104" style="width: 450px;">
+					<ul>
+					<li><img src="images/Cix_s1eFs7SAPfATAAL9OUJBRPk642_180x180.png" width="60" height="60"/ class="img1"><p> 魅族智能路由器</p></li>
+					<li><img src="images/CnQOjVeFtG6AY_FpAAKdyPUHRpQ152_180x180.png" width="60" height="60"/ class="img1"><p > 魅族移动电源（标准版）</p></li>
+					<li><img src="images/Cix_s1eFs8mAPfJ_AASc1X7HVrg598_180x180.png" width="60" height="60"/ class="img1"><p >魅族移动电源 快充版</p></li>
+					<li><img src="images/Cix_s1eFtHmAKzjJAABXVrwLVgU637_180x180.jpg" width="60" height="60"/ class="img1"><p > 魅族路由器 极速版</p></li>
+					</ul>
+					<ul style="float:left;width: 300px;height:480px;position: absolute;top: 0px;left:150px;">
+					 <li><img src="images/1465800410-90918.png"width="290"height="460" /></li>
+					</ul>		
+				</div>
+				<div class="div10" onmouseenter="div18()" onmouseleave="div19()" id="div105">
+					<ul>
+					<li><img src="images/Cix_s1e7tmqAWncLAAHxAekM4dY735_180x180.png" width="60" height="60"/ class="img1"><p>魅蓝E 纤格纹保护壳</p></li>
+					<li><img src="images/CnQOjVeN7JmARIdHAAKkhCmlgOs675_180x180.png" width="60" height="60"/ class="img1"><p > MX6智能保护套</p></li>
+					<li><img src="images/CnQOjVfH1HOAK9gkAARJiQJn9AA145_180x180.png" width="60" height="60"/ class="img1"><p > 魅蓝note3 软胶保护壳</p></li>
+					<li><img src="images/CnQOjVfH1L-AcHIUAAKzNe6JVvs467_180x180.png" width="60" height="60"/ class="img1"><p > 魅蓝note3 智能保护套</p></li>
+					<li><img src="images/CnQOjVfWCV6AH_R5AABmuD2rhcU806_180x180.png" width="60" height="60"/ class="img1"><p > 魅蓝3 高透保护膜</p></li>
+					</ul>
+					<ul>
+					<li><img src="images/Cix_s1ehVAyACMIkAALN7IQAbIM494_180x180.png" width="60" height="60"/ class="img1"><p > PRO 6智能保护套</p></li>
+					<li><img src="images/Cix_s1evz-qACJ77AADXGdYFg6Y878_180x180.png" width="60" height="60"/ class="img1"><p > 魅蓝E 高透保护膜</p></li>
+					<li><img src="images/CnQOjVeYZeCAKJlWAAPduqMl9J8158_180x180.png" width="60" height="60"/ class="img1"><p > 魅蓝3s 高透保护膜</p></li>
+					<li><img src="images/CnQOjVeFtM-AGUBRAABiyeWlTHc607_180x180.png" width="60" height="60"/ class="img1"><p >魅蓝note3 高透保护膜</p></li>
+					<li><img src="images/Cix_s1fWCNGAA6bvAAHjh-SvOeM580_180x180.png" width="60" height="60"/ class="img1"><p > 魅蓝Max高透保护膜</p></li>
+					</ul>
+					<ul style="float:left;width: 300px;height:480px;position: absolute;top: 0px;left:300px;">
+					 <li><img src="images/1462246403-45996.jpg"width="290"height="460" /></li>
+					</ul>		
+				</div>
+				<div class="div10" onmouseenter="div20()" onmouseleave="div21()" id="div106">
+					<ul>
+					<li><img src="images/CnQOjVeFtSSAFIpHAAFrL2yvhZY367_180x180.png" width="60" height="60"/ class="img1"><p>电源适配器</p></li>
+					<li><img src="images/CnQOjVeFtVuAey8IAAIWW8GIYgc307_180x180.png" width="60" height="60"/ class="img1"><p > 魅族Type-C USB数据线</p></li>
+					<li><img src="images/Cix_s1eFtXGAY_DuAACiUNg1SQg766_180x180.png" width="60" height="60"/ class="img1"><p >魅族USB 数据线</p></li>
+					<li><img src="images/Cix_s1eFtU2AQLoeAAIjxDrrPiE648_180x180.png" width="60" height="60"/ class="img1"><p >魅族Type-C 金属数据线</p></li>
+					<li><img src="images/CnQOjVeFtYWANiT8AAH0GoICkgc428_180x180.png" width="60" height="60"/ class="img1"><p >罗马仕AU12快充车充</p></li>
+					</ul>
+					<ul>
+					<li><img src="images/Cix_s1eFtaCAR14MAAHJCLla0Ls060_180x180.png" width="60" height="60"/ class="img1"><p >罗马仕AU15 车充</p></li>
+					<li><img src="images/CnQOjVeFtbCAYiN9AAHb0BuC0do464_180x180.png" width="60" height="60"/ class="img1"><p > 罗马仕AC12S快充适配器</p></li>
+					<li><img src="images/Cix_s1eFtb-AYnD3AACVRHk1HFM250_180x180.png" width="60" height="60"/ class="img1"><p > 罗马仕AC10快充适配器</p></li>
+					<li><img src="images/Cix_s1eNoNuAfAH3AAKxg1EfddM792_180x180.png" width="60" height="60"/ class="img1"><p >ORICO QC3.0多口车充头</p></li>
+					<li><img src="images/CnQOjVeNoRmADcaXAADkO3acMRU993_180x180.png" width="60" height="60"/ class="img1"><p >ORICO 4口USB快充充电器</p></li>
+					</ul>
+					<ul style="float:left;width: 300px;height:480px;position: absolute;top: 0px;left:300px;">
+					 <li><img src="images/1467254278-66658.jpg"width="290"height="460" /></li>
+					</ul>		
+				</div>
+				<div class="div10" onmouseenter="div22()" onmouseleave="div23()" id="div107">
+					<ul>
+					<li><img src="images/1466046721-79564.png" width="60" height="60"/ class="img1"><p> 英特曼迷你旅行小插排</p></li>
+					<li><img src="images/CnQOjVeZd-aACZuLAFQ1DuBT8ZA231_180x180.png" width="60" height="60"/ class="img1"><p > 猎奇(LIEQI)手机镜头</p></li>
+					<li><img src="images/CnQOjVeXN1OAbajGAAYZGoh7sfs835_180x180.png" width="60" height="60"/ class="img1"><p > 东芝v8 2.5英寸移动硬盘</p></li>
+					<li><img src="images/CnQOjVeZ4WCAAID4AAasBa2BWZ0908.png" width="60" height="60"/ class="img1"><p >幻响风小扇</p></li>
+					<li><img src="images/1468063315-69442.png" width="60" height="60"/ class="img1"><p > ORICO 4口USB智能充电器</p></li>
+					</ul>
+					<ul>
+					<li><img src="images/Cix_s1eXN4eAQlCKAAJYJ_xCl5I669_180x180.png" width="60" height="60"/ class="img1"><p >魅族豌豆钥匙包</p></li>
+					<li><img src="images/Cix_s1eFtieAEEY_AAP3Kv3jA9o161_180x180.png" width="60" height="60"/ class="img1"><p >东芝黑甲虫2.5寸移动硬盘</p></li>
+					<li><img src="images/Cix_s1eFtjqAMymuAAUUUZgKAC0878_180x180.png" width="60" height="60"/ class="img1"><p > 闪迪至尊高速OTG手机U盘</p></li>
+					<li><img src="images/Cix_s1eZeN-AGPsFAAXQ3fgMKRQ159_180x180.png" width="60" height="60"/ class="img1"><p > 三星750 SATA3 固态硬盘</p></li>
+					<li><img src="images/CnQOjVeVfeyAYvw8AAIdait89PM797_180x180.png" width="60" height="60"/ class="img1"><p > 魅族熊猫金属钥匙扣</p></li>
+					</ul>
+					<ul style="float:left;width: 300px;height:480px;position: absolute;top: 0px;left:300px;">
+					 <li><img src="images/Cix_s1e1DSKAIUU_AAD7EwvgpQA779.jpg"width="290"height="460" /></li>
+					</ul>		
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="body5">
+			<div class="div9">
+
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr height="69">
+						<td width="123">
+							<img src="images/1450855246-61162.png" width="30" height="30" />
+							<p>M码通道</p>
+						</td>
+						<td>
+							<img src="images/1450855279-64872.png" width="30" height="30" />
+							<p>以旧换新</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/1450855198-58056.png" width="30" height="30" />
+							<p>魅族意外保</p>
+						</td>
+						<td><img src="images/1451960447-93534.png" width="30" height="30" />
+							<p>回购单查询</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<img src="images/1469442560-64371.jpg" style="margin-left: 10px;" />
+			<img src="images/Cix_s1fTqBqAIgcPAABCN90zE-8433.jpg" />
+			<img src="images/Cix_s1fKTI6ANb5sAAA7w9YVn5M493.jpg" />
+			<img src="images/CnQOjVfaVJeABFpwAAA9XQSfyhU480.jpg" />
+		</div>
+		<div style="width: 100%;height:2820px;background: #F5F5F5;">
+			<div style=" width:1252px;margin: auto;margin-top:70px;">
+				<img src="images/1469408953-98411.jpg" />
+				<p style="margin-top:20px;"><span style="font-size:25px; font-weight:400;">精选配件 </span>&nbsp;&nbsp;&nbsp;耳机音箱&nbsp;&nbsp;&nbsp; 路由器/移动电源 &nbsp;&nbsp;&nbsp;移动存储</p>
+				<table border="0" cellspacing="10" cellpadding="3" class="table1">
+					<tr>
+						<td><img src="images/CnQOjVfQGIOAVrt-AAC8DVm6bXE136.jpg" width="249" height="350"></td>
+						<td><img src="images/Cix_s1fWHNWAXBhTAACVRHk1HFM053_180x180.png">
+							<p class="p1">罗马士AC10快冲适配器</p>
+							<p class="p2">支持MTK快冲模式</p>
+							<p class="p3">￥39</p>
+						</td>
+						<td><img src="images/CnQOjVfPz5OAN-K-AAN-FTgo9io942_180x180.png">
+							<p class="p1">先锋SE-CL51S</p>
+							<p class="p2">线控高清通话魅友节专项直降</p>
+							<p class="p3">￥169</p>
+						</td>
+						<td><img src="images/Cix_s1fNMGCAD0JRAAJl7weQ3nI624_180x180.png">
+							<p class="p1">森海赛尔CX215入耳式耳机</p>
+							<p class="p2">清新时尚高效降噪炫彩轻巧</p>
+							<p class="p3">￥219</p>
+						</td>
+						<td><img src="images/CnQOjVfWadmAfZhTAAUUUZgKAC0590_180x180.png">
+							<p class="p1">闪迪至尊告诉OTG手机U盘</p>
+							<p class="p2">全新设计USB3.0高速传输</p>
+							<p class="p3">￥45.9起</p>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="images/Cix_s1fbvc-AVIe0AAXhCIiNOD8908_180x180.png">
+							<p class="p1">东芝v8系列2.5英寸移动硬盘</p>
+							<p class="p2">买即送铭摩印象自拍杆</p>
+							<p class="p3">￥419起</p>
+						</td>
+						<td><img src="images/CnQOjVfWasqAOprvAAOvCPCH1u8414_180x180.png">
+							<p class="p1">FiiO飞傲M3 无损音乐播放器</p>
+							<p class="p2">便携式数字音乐播放器</p>
+							<p class="p3">￥298</p>
+						</td>
+						<td><img src="images/Cix_s1fWax2AQLJtAAK6UIWtgUA436_180x180.png">
+							<p class="p1">森海塞尔MX365立体声耳塞</p>
+							<p class="p2">不仅是听觉冲击，更是视觉冲击 </p>
+							<p class="p3">￥189</p>
+						</td>
+						<td><img src="images/Cix_s1fWbeqAGv_JAAWCkN1kk0s712_180x180.png">
+							<p class="p1">三星存储卡</p>
+							<p class="p2">高速存储捕捉快乐情景</p>
+							<p class="p3">￥30.9起</p>
+						</td>
+						<td><img src="images/Cix_s1fWbeqAGv_JAAWCkN1kk0s712_180x180.png">
+							<p class="p1">魅族 线控自拍杆</p>
+							<p class="p2">小巧 快捷 高效</p>
+							<p class="p3">￥69</p>
+						</td>
+					</tr>
+				</table>
+				<img src="images/CnQOjVfaVcqAS5kTAADmIxBkeeE406.jpg" style="margin-left:7px; margin-top: 20px;" />
+				<p style="margin-top:20px;"><span style="font-size:25px; font-weight:400;">智能硬件 </span>&nbsp;&nbsp;&nbsp;智能家居&nbsp;&nbsp;&nbsp;智能出行 &nbsp;&nbsp;&nbsp;智能娱乐 &nbsp;&nbsp;&nbsp;智能健康 </p>
+				<table border="0" cellspacing="10" cellpadding="3" class="table1">
+					<tr>
+						<td><img src="images/Cix_s1ey2dmAKJ_aAAFCjlmbYGw926.png" width="249" height="350"></td>
+						<td><img src="images/CnQOjVfWa16AOZb0AAOL1scGcd4117_180x180.png">
+							<p class="p1">罗马士AC10快冲适配器</p>
+							<p class="p2">支持MTK快冲模式</p>
+							<p class="p3">￥39</p>
+						</td>
+						<td><img src="images/Cix_s1fWa5iASMvOAAMArHJ1NOs243_180x180.png">
+							<p class="p1">先锋SE-CL51S</p>
+							<p class="p2">线控高清通话魅友节专项直降</p>
+							<p class="p3">￥169</p>
+						</td>
+						<td><img src="images/CnQOjVfWa8OATQ4qAAWJdBWs3Pc208_180x180.png">
+							<p class="p1">森海赛尔CX215入耳式耳机</p>
+							<p class="p2">清新时尚高效降噪炫彩轻巧</p>
+							<p class="p3">￥219</p>
+						</td>
+						<td><img src="images/Cix_s1fQBjGAaGr7AAC00HKACXU866_180x180.png">
+							<p class="p1">闪迪至尊告诉OTG手机U盘</p>
+							<p class="p2">全新设计USB3.0高速传输</p>
+							<p class="p3">￥45.9起</p>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="images/CnQOjVfQBn2ADARiAAWUjUeTMYc353_180x180.png">
+							<p class="p1">东芝v8系列2.5英寸移动硬盘</p>
+							<p class="p2">买即送铭摩印象自拍杆</p>
+							<p class="p3">￥419起</p>
+						</td>
+						<td><img src="images/Cix_s1fWbAuAJD_mAAQ1xFqEUUA996_180x180.png">
+							<p class="p1">FiiO飞傲M3 无损音乐播放器</p>
+							<p class="p2">便携式数字音乐播放器</p>
+							<p class="p3">￥298</p>
+						</td>
+						<td><img src="images/CnQOjVfWbGmAXniLACcf6e-q3pc202_180x180.png">
+							<p class="p1">森海塞尔MX365立体声耳塞</p>
+							<p class="p2">不仅是听觉冲击，更是视觉冲击 </p>
+							<p class="p3">￥189</p>
+						</td>
+						<td><img src="images/Cix_s1fWbVOAef1kAAQmvH3SsIE893_180x180.png">
+							<p class="p1">三星存储卡</p>
+							<p class="p2">高速存储捕捉快乐情景</p>
+							<p class="p3">￥30.9起</p>
+						</td>
+						<td><img src="images/CnQOjVfQCECAMlmqAALRn19d2x0802_180x180.png">
+							<p class="p1">魅族 线控自拍杆</p>
+							<p class="p2">小巧 快捷 高效</p>
+							<p class="p3">￥69</p>
+						</td>
+					</tr>
+				</table>
+				<p style="margin-top:50px;"><span style="font-size:25px; font-weight:400;">手机周边</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;保护套/后盖/贴膜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据线/电源适配器</p>
+				<table border="0" cellspacing="10" cellpadding="3" class="table1">
+					<tr>
+						<td><img src="images/1468915931-14085.png" width="249" height="350"></td>
+						<td><img src="images/Cix_s1eN6ZKAaP7AAARJiQJn9AA510_180x180.png">
+							<p class="p1">罗马士AC10快冲适配器</p>
+							<p class="p2">支持MTK快冲模式</p>
+							<p class="p3">￥39</p>
+						</td>
+						<td><img src="images/Cix_s1eeo-6AOHVYAACLZCLhgmY372_180x180.png">
+							<p class="p1">先锋SE-CL51S</p>
+							<p class="p2">线控高清通话魅友节专项直降</p>
+							<p class="p3">￥169</p>
+						</td>
+						<td><img src="images/Cix_s1fGPjGALpR0AAHxAekM4dY525_180x180.png">
+							<p class="p1">森海赛尔CX215入耳式耳机</p>
+							<p class="p2">清新时尚高效降噪炫彩轻巧</p>
+							<p class="p3">￥219</p>
+						</td>
+						<td><img src="images/CnQOjVecte-AN9BBAAKzNe6JVvs491_180x180.png">
+							<p class="p1">闪迪至尊告诉OTG手机U盘</p>
+							<p class="p2">全新设计USB3.0高速传输</p>
+							<p class="p3">￥45.9起</p>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="images/CnQOjVeEp8-AZ6OzAAYG7LEKpLA174_180x180.png">
+							<p class="p1">东芝v8系列2.5英寸移动硬盘</p>
+							<p class="p2">买即送铭摩印象自拍杆</p>
+							<p class="p3">￥419起</p>
+						</td>
+						<td><img src="images/CnQOjVfWCdCAJ6CJAAHjh-SvOeM021_180x180.png">
+							<p class="p1">FiiO飞傲M3 无损音乐播放器</p>
+							<p class="p2">便携式数字音乐播放器</p>
+							<p class="p3">￥298</p>
+						</td>
+						<td><img src="images/1461922735@180x180.png">
+							<p class="p1">森海塞尔MX365立体声耳塞</p>
+							<p class="p2">不仅是听觉冲击，更是视觉冲击 </p>
+							<p class="p3">￥189</p>
+						</td>
+						<td><img src="images/Cix_s1fGPu2AJ8qNAAPduqMl9J8947_180x180.png">
+							<p class="p1">三星存储卡</p>
+							<p class="p2">高速存储捕捉快乐情景</p>
+							<p class="p3">￥30.9起</p>
+						</td>
+						<td><img src="images/CnQOjVfXbSeARD4tAAZYK3KJlH8271_180x180.png">
+							<p class="p1">魅族 线控自拍杆</p>
+							<p class="p2">小巧 快捷 高效</p>
+							<p class="p3">￥69</p>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+		<div class="body6">
+			<ul>
+				<li><img src="images/7.png">
+					<p><span>7天</span> 无理由退货 </p>
+				</li>
+				<li><img src="images/15.png">
+					<p> <span>15天</span> 换货保障 </p>
+				</li>
+				<li><img src="images/1.png">
+					<p><span> 1年</span> 免费保修 </p>
+				</li>
+				<li><img src="images/speed.png">
+					<p> <span> 百城</span> 速达 </p>
+				</li>
+				<li><img src="images/baoyou.png">
+					<p> <span> 全场</span> 包邮 </p>
+				</li>
+				<li style="border: 0px"><img src="images/map.png">
+					<p> <span> 2000多家</span> 专卖店 </p>
+				</li>
+			</ul>
+
+		</div>
+		<div class="body7">
+			<ul style="margin-left:75px;">
+				<h4>帮助说明</h4>
+				<li>支付方式</li>
+				<li>配送说明</li>
+				<li>售后服务</li>
+				<li>付款帮助</li>
+			</ul>
+			<ul>
+				<h4>Flyme</h4>
+				<li>开放平台</li>
+				<li>固件下载</li>
+				<li>软件商店</li>
+				<li>查找手机</li>
+			</ul>
+			<ul>
+				<h4>关于我们</h4>
+				<li>关于魅族</li>
+				<li>加入我们</li>
+				<li>联系我们</li>
+				<li>法律声明</li>
+			</ul>
+			<ul>
+				<h4>关注我们</h4>
+				<li>新浪微博</li>
+				<li>腾讯微博</li>
+				<li>QQ空间</li>
+				<li>官方微信 </li>
+			</ul>
+			<ul style="margin-left:160px;">
+				<li style="font-size: 15px;">24小时全国服务热线</li>
+				<li style="font-size: 25px; color: darkturquoise; margin-top:15px;">400-788-3333</li>
+				<li style="width:160px;height: 35px; background: darkturquoise; border-radius:5px; margin-top:15px; color: white;">
+					<img src="images/20x21xiaoshi.png" style="margin-top:7px;margin-left:20px; float: left;" />
+					<p style="margin-top:10px;float: left;">24小时服务热线</p>
+				</li>
+			</ul>
+
+		</div>
+		<div class="body8">
+			<p>©2016 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;&nbsp;" 备案号：粤ICP备13003602号-2 &nbsp;&nbsp;经营许可证编号：粤B2-20130198&nbsp; &nbsp;营业执照 &nbsp;
+				<span><img src="images/footer-copy-1.png"/></span> &nbsp;
+				<span><img src="images/footer-copy-2.png"/></span> &nbsp;
+				<span><img src="images/trust-icon.png"/></span>
+			</p>
+		</div>
+		<div id="to_top"></div>
+	</body>
+
+</html>
+
+<script type="text/javascript">
+
+
+//		
+//	 var i=0; 
+//		function aa(){
+//			
+//			var arr = new Array("images/body1.jpg","images/body2.jpg",
+//			"images/body3.jpg","images/body4.jpg","images/body5.jpg");
+//				body4.style.background=  "url(arr[i])";
+//					console.log(arr[i]);
+//						i++;
+//			 
+//			if(i==arr.length){
+//				i=0;
+//			}
+//		}
+//		aa();
+//		setInterval(aa,1000);
+var arr = new Array();
+arr[0] = "images/body1.jpg";
+arr[1] = "images/body2.jpg";
+	
+	var close = document.getElementById("close");
+	close.onclick = function() {
+		var body1 = document.getElementById("body1");
+		body1.style.display = "none";
+	}
+	var pro11 = document.getElementById("pro11");
+	var pro12 = document.getElementById("pro12");
+	var pro13 = document.getElementById("pro13");
+	var pro14 = document.getElementById("pro14");
+	var pro15 = document.getElementById("pro15");
+	var pro1 = document.getElementById("pro1");
+	var pro2 = document.getElementById("pro2");
+	var pro3 = document.getElementById("pro3");
+	var pro4 = document.getElementById("pro4");
+	var pro5 = document.getElementById("pro5");
+	var body4 = document.getElementById("body4");
+	var div1=document.getElementById("div101");
+	var div2=document.getElementById("div102");
+	var div3=document.getElementById("div103");
+	var div4=document.getElementById("div104");
+	var div5=document.getElementById("div105");
+	var div6=document.getElementById("div106");
+	var div7=document.getElementById("div107");
+	function aaaaa(){
+			pro1.style.height="207px";
+		}
+	pro11.onmouseover = function f1() {
+		pro1.style.display = "block";
+		setTimeout(aaaaa,200);
+	}
+	pro12.onmouseover = function f2() {
+		pro2.style.display = "block";
+		
+	}
+	pro13.onmouseover = function f3() {
+		pro3.style.display = "block";
+		
+	}
+	pro14.onmouseover = function f4() {
+		pro4.style.display = "block";
+	
+	}
+	pro15.onmouseover = function f5() {
+		pro5.style.display = "block";
+		
+	}
+	pro11.onmouseout = function f11() {
+		pro1.style.display = "none";
+	}
+	pro12.onmouseout = function f21() {
+		pro2.style.display = "none";
+	}
+	pro13.onmouseout = function f31() {
+		pro3.style.display = "none";
+	}
+	pro14.onmouseout = function f41() {
+		pro4.style.display = "none";
+	}
+	pro15.onmouseout = function f51() {
+		pro5.style.display = "none";
+	}
+
+	function fun1() {
+		pro1.style.display = "block";
+       
+	}
+
+	function fun2() {
+		pro2.style.display = "block";
+	}
+
+	function fun3() {
+		pro3.style.display = "block";
+	}
+
+	function fun4() {
+		pro4.style.display = "block";
+	}
+
+	function fun5() {
+		pro5.style.display = "block";
+	}
+
+	function fun11() {
+		pro1.style.display = "none";
+	}
+
+	function fun12() {
+		pro2.style.display = "none";
+	}
+
+	function fun13() {
+		pro3.style.display = "none";
+	}
+
+	function fun14() {
+		pro4.style.display = "none";
+	}
+
+	function fun15() {
+		pro5.style.display = "none";
+	}
+
+	function wrapper1() {
+		body4.style.backgroundImage = "url(images/body1.jpg)";
+		
+	}
+
+	function wrapper2() {
+		body4.style.backgroundImage = "url(images/body2.jpg)";
+	}
+
+	function wrapper3() {
+		body4.style.backgroundImage = "url(images/body3.jpg)";
+	}
+
+	function wrapper4() {
+		body4.style.backgroundImage = "url(images/body4.jpg)";
+	}
+
+	function wrapper5() {
+		body4.style.backgroundImage = "url(images/body5.jpg)";
+		
+	}
+	function div10(){
+		div1.style.display="block";
+	}
+	function div11(){
+		div1.style.display="none";
+	}
+	function div12(){
+		div2.style.display="block";
+	}
+	function div13(){
+		div2.style.display="none";
+	}
+	function div14(){
+		div3.style.display="block";
+	}
+	function div15(){
+		div3.style.display="none";
+	}
+	function div16(){
+		div4.style.display="block";
+	}
+	function div17(){
+		div4.style.display="none";
+	}
+	function div18(){
+		div5.style.display="block";
+	}
+	function div19(){
+		div5.style.display="none";
+	}
+	function div20(){
+		div6.style.display="block";
+	}
+	function div21(){
+		div6.style.display="none";
+	}
+	function div22(){
+		div7.style.display="block";
+	}
+	function div23(){
+		div7.style.display="none";
+	}
+	function li1(){
+		div1.style.display="block";
+		setTimeout(fff2,200)
+	}
+	function fff2(){
+		div1.style.width="600px";
+	}
+	function li11(){
+		div1.style.display="none";
+	}
+	function li2(){
+		div2.style.display="block";
+	}
+	function li21(){
+		div2.style.display="none";
+	}
+	function li3(){
+		div3.style.display="block";
+	}
+	function li31(){
+		div3.style.display="none";
+	}
+	function li4(){
+		div4.style.display="block";
+	}
+	function li41(){
+		div4.style.display="none";
+	}
+	function li5(){
+		div5.style.display="block";
+	}
+	function li51(){
+		div5.style.display="none";
+	}
+	function li6(){
+		div6.style.display="block";
+	}
+	function li61(){
+		div6.style.display="none";
+	}
+	function li7(){
+		div7.style.display="block";
+	}
+	function li71(){
+		div7.style.display="none";
+	}
+Img = new Array();
+Img[0] = "url(images/body1.jpg)";
+Img[1] = "url(images/body2.jpg)";
+Img[2] = "url(images/body3.jpg)";
+Img[3] = "url(images/body4.jpg)";
+Img[4] = "url(images/body5.jpg)";
+size = Img.length;
+var i = 0;
+changeimages();
+
+
+function changeimages() {
+    // ImgId.src = Img[i]; 
+//   document.getElementById("wrappe"+i).style.background="blue";
+   if(i==0){
+   	document.getElementById("wrappe0").style.background="#00C1F8";
+   }else{
+   		document.getElementById("wrappe0").style.background="";
+   }
+   if(i==1){
+   	document.getElementById("wrappe1").style.background="#00C1F8";
+   }else{
+   		document.getElementById("wrappe1").style.background="";
+   }
+   if(i==2){
+   	document.getElementById("wrappe2").style.background="#00C1F8";
+   }else{
+   		document.getElementById("wrappe2").style.background="";
+   }
+   if(i==3){
+   	document.getElementById("wrappe3").style.background="#00C1F8";
+   }else{
+   		document.getElementById("wrappe3").style.background="";
+   }
+    if (i == 4) {
+        body4.style.backgroundPosition = "-300px   ";
+        	document.getElementById("wrappe4").style.background="#00C1F8";
+    } else {
+    
+        body4.style.backgroundPosition = "0px   ";
+        document.getElementById("wrappe4").style.background="";
+    }
+    if (i >= size) {
+        i = 0;
+    }
+
+    body4.style.backgroundImage = Img[i];
+    i++;
+   
+    setTimeout(changeimages,3000);
+}
+	
+
+	
+</script>
